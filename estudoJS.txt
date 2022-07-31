@@ -1,0 +1,8 @@
+- o trecho em JS se põe na parte final da seção BODY
+
+COMANDOS JS
+
+- window.alert(' ')               [o trecho 'window.' pode ser omitido]
+- confirm(' ')
+- prompt(' ')
+- 
