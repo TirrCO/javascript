@@ -4,7 +4,8 @@ function carregar() {
 
     var data = new Date()
     var hora = data.getHours()
-    txt.innerHTML = `Agora são ${hora}h.`
+    var min = data.getMinutes()
+    txt.innerHTML = `Agora são ${hora}h e ${min}min.`
 
     if (hora >= 0 && hora < 12) {
         img.src = 'imagens/manha.png'
