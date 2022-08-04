@@ -1,15 +1,17 @@
-function contar () {
-    var ini = document.getElementById('txtini')
-    var fim = document.getElementById('txtfim')
-    var pas = document.getElementById('txtpas')
-    var resp = document.querySelector('div#resp')
+function tabuar() {
+    var n = document.getElementById('txtnum')
+    var tab = document.getElementById('seltab')
 
-    var inicio = Number(ini.value)
-    var final = Number(fim.value)
-    var passo = Number(pas.value)
-
-    while (inicio <= final) {
-        resp.innerHTML = `${inicio} &#x1F449; `
-        inicio = inicio + passo
+    if (n.value.length == 0) {
+        window.alert('Por favor, digite um número.')
+    } else {
+        var nreal = Number(n.value)
+        tab.innerHTML = ''
+        for (var c = 1; c <= 10; c++) {
+            var item = document.createElement('option')
+            item.text = `${nreal} x ${c} = ${nreal * c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+        }
     }
 }
