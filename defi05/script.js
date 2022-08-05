@@ -53,11 +53,12 @@ function finalizar() {
             }
         }
         media = soma / tot
+        var mediabr = String(media).replace('.',',')
         resp.innerHTML = ''
         resp.innerHTML += `<p>Ao todo temos ${tot} números cadastrados.</p>`
         resp.innerHTML += `<p>O maior valor foi ${maior}.</p>`
         resp.innerHTML += `<p>O menor valor foi ${menor}.</p>`
         resp.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
-        resp.innerHTML += `<p>A média dos valores é ${media}.</p>`
+        resp.innerHTML += `<p>A média dos valores é ${mediabr}.</p>`
     }
 }
