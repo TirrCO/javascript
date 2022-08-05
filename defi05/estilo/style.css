@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    background-color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-weight: larger;
+}
+
+main {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.1em;
+}
+
+div#mostra > select {
+    width: 150px;
+}
+
+div#resp {
+    margin: 10px 0px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
